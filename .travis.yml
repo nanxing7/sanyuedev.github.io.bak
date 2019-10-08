@@ -5,9 +5,14 @@ node_js:
 cache: npm
 branches:
   only:
-    - master # build master branch only
+    - hexo # build master branch only
+before_install:
+- npm install hexo-cli -g #安装Hexo脚手架工具
+install:
+- npm install  #安装package.json中的依赖
 script:
-  - hexo generate # generate static files
+- hexo clean
+- hexo generate
 deploy:
   provider: pages
   skip-cleanup: true
@@ -16,3 +21,4 @@ deploy:
   on:
     branch: master
   local-dir: public
+  
