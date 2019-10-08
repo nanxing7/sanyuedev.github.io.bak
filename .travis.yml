@@ -5,15 +5,9 @@ node_js:
 cache: npm
 branches:
   only:
-    - hexo # build master branch only
-install:
-  - npm install
+    - master # build master branch only
 script:
-  - npm audit fix --force # 执行修复命令
-after_script:
-  - hexo clean
-  - hexo g # generate static files
-
+  - hexo generate # generate static files
 deploy:
   provider: pages
   skip-cleanup: true
@@ -22,4 +16,3 @@ deploy:
   on:
     branch: hexo
   local-dir: public
-  target_branch: master
