@@ -23,4 +23,9 @@ deploy:
   on:
     branch: master
   local-dir: public
+notifications:
+email:
+  - sanyuedev@gmail.com
+on_success: always
+on_failure: always
   
