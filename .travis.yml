@@ -6,27 +6,17 @@ cache: npm
 branches:
   only:
     - hexo # build master branch only
-before_install:
-- npm install hexo-cli -g #安装Hexo脚手架工具
-- npm audit fix
-install:
-- npm install  #安装package.json中的依赖
-- npm audit fix
 script:
-- hexo clean
-- hexo generate
+  - npm install -g hexl-cli
+  - npm install
+  - npm audit fix
+  - hexo generate # generate static files
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GH_TOKEN
-  keep_history: fales
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
   on:
     branch: hexo
-  local_dir: public
+  local-dir: public
   target_branch: master
-notifications:
-email:
-  - sanyuedev@gmail.com
-on_success: always
-on_failure: always
-  
