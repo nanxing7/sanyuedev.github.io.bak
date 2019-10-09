@@ -47,6 +47,16 @@ git add . #增加变化的文件进 git
 git commit -m '描述' #提交所有更改，并注释
 git push origin hexo #提交分支 hexo 到远程仓库
 ```
+删除缓存 不能用
+```git
+git rm 
+```
+会导致本地文件也被删除，要用
+```git
+git rm -r --cached "文件夹的名称" 
+git commit -m "更新log"
+git push -u origin master
+```
 
 ### .travis.yml 配置代码
 ```yml
