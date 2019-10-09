@@ -127,7 +127,7 @@ cdn:
 # ---------------
 avatar:
 
-top_img: https://blog-1251750343.cos.ap-beijing.myqcloud.com/blog/blog-bg.jpg # false or url of img
+top_img: https://raw.githubusercontent.com/sanyuedev/Picture_Bed_With_PicGO/master/20191009203011.png # false or url of img
 
 post_meta:
   date_type: created # created or updated
