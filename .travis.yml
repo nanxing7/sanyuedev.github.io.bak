@@ -18,10 +18,11 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
-  keep-history: true
+  keep-history: false
   on:
     branch: master
   local-dir: public
+  target_branch: master
 notifications:
 email:
   - sanyuedev@gmail.com
