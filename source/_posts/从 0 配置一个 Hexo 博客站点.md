@@ -4,8 +4,27 @@ date: 2019-09-24 03:56:14
 categories:
 - Hexo
 ---
-## 从0配置一个Hexo
+## 流程
+以下内容仅为记录自己搭建配置博客的流程，仅供参考！
+### 安装
+安装 Hexo 只需要几分钟的时间
+#### 安装前提
+Node.js
+Git
+#### 安装 Nodejs
+```
+brew install node
+```
+#### 安装 Git
+```
+brew install git
+```
 
+#### 安装 Hexo
+所有必备的应用程序安装完成后，即可使用 NPM 安装 Hexo
+```shell
+$ npm install -g hexo-cli
+```
 
 ### 用到的 git 相关命令
 ```git
