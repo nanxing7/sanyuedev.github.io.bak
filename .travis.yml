@@ -21,7 +21,7 @@ deploy:
   github_token: $GH_TOKEN
   keep_history: fales
   on:
-    branch: master
+    branch: hexo
   local_dir: public
   target_branch: master
 notifications:
