@@ -8,8 +8,7 @@ branches:
     - hexo # build master branch only
 before_install:
 - npm install hexo-cli -g #安装Hexo脚手架工具
-- npm install hexo-renderer-jade --save
-- npm install hexo-renderer-stylus --save
+- npm audit fix
 install:
 - npm install  #安装package.json中的依赖
 script:
