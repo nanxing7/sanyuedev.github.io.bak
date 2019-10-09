@@ -16,11 +16,13 @@ script:
 - hexo generate
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  keep_history: true
   on:
     branch: master
+  local_dir: public
+  target_branch: master
 notifications:
 email:
   - sanyuedev@gmail.com
