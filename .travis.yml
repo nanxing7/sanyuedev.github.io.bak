@@ -11,6 +11,7 @@ before_install:
 - npm audit fix
 install:
 - npm install  #安装package.json中的依赖
+- npm audit fix
 script:
 - hexo clean
 - hexo generate
@@ -18,7 +19,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
-  keep_history: true
+  keep_history: fales
   on:
     branch: master
   local_dir: public
