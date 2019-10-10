@@ -1,5 +1,5 @@
 #!/bin/sh
-DATA="$data"
+DATA= data
 echo “$DATA”
 git add .
 git commit -m '提交'
