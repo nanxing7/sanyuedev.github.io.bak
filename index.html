@@ -28,8 +28,30 @@
 <h4 id="更新表"><a href="#更新表" class="headerlink" title="更新表"></a>更新表</h4><h5 id="增加列"><a href="#增加列" class="headerlink" title="增加列"></a>增加列</h5><p>ADD</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="keyword">ADD</span> tbl_name 字段名 <span class="number">1</span> 数据类型 [列级完整性约束条件][默认值] &#123;<span class="keyword">AFTER</span>/<span class="keyword">BEFORE</span>&#125; 字段;</span><br></pre></td></tr></table></figure>
 
+<p>CHANGE</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">CHANGE</span> 原字段 新字段 属性</span><br></pre></td></tr></table></figure>
+
 <p>ALTER</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ALTER</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ALTER</span> [<span class="keyword">COLUMN</span>] 字段名 <span class="keyword">SET</span></span><br></pre></td></tr></table></figure>
+
+<p>MODIFY</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">MODIFY</span> 字段 ...</span><br></pre></td></tr></table></figure>
+
+<p>DROP</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">DROP</span> 字段名</span><br></pre></td></tr></table></figure>
+
+<p>RENAME[TO]</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">RENAME</span> <span class="keyword">TO</span> new_tbl_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="重命名表"><a href="#重命名表" class="headerlink" title="重命名表"></a>重命名表</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">RENAME</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">TO</span> new_tbl_name [,tbl2_name <span class="keyword">TO</span> new_tbl_name]</span><br></pre></td></tr></table></figure>
+
+<h4 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">EXISTS</span>] tbl_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看表"><a href="#查看表" class="headerlink" title="查看表"></a>查看表</h4><p>显示表的名称</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> <span class="keyword">TABLES</span>;</span><br></pre></td></tr></table></figure>
+
+<p>显示表的结构</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DESCRIBE</span> tbl_name;</span><br></pre></td></tr></table></figure>
 
 <p>连接数据库</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
