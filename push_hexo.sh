@@ -1,4 +1,5 @@
 #!/bin/sh
+d=date
 git add .
-git commit -m date
+git commit -m '$d'
 git push
