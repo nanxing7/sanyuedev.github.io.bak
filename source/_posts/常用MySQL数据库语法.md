@@ -30,7 +30,7 @@ SHOW DATABASES;
 ```
 
 ### 表定义
-创建表
+#### 创建表
 ```sql
 CREATE TABLE tbl_name(
 字段名 1 数据类型 [列级完整性约束条件][默认值]
@@ -38,7 +38,17 @@ CREATE TABLE tbl_name(
 [表级完整性约束条件]
 )[ENGINE=引擎类型]
 ```
-
+关键字 `AUTO_INCREMENT` 实现自动增长
+#### 更新表
+##### 增加列
+ADD
+```sql
+ALTER TABLE ADD tbl_name 字段名 1 数据类型 [列级完整性约束条件][默认值] {AFTER/BEFORE} 字段;
+```
+ALTER
+```sql
+ALTER TABLE tbl_name ALTER 
+```
 连接数据库
 ```sql
 mysql -u root -p
