@@ -6,13 +6,43 @@ categories:
 - 数据库
 - MySQL
 ---
+## 数据定义
+### 数据库模式定义
+创建数据库
+```sql
+CREATE DATABASE db_name;
+```
+选择数据库
+```sql
+USE db_name;
+```
+修改数据库
+```sql
+ALTER DATABASE db_name;
+```
+删除数据库
+```sql
+DROP DATABASE;
+```
+查看数据库
+```sql
+SHOW DATABASES;
+```
+
+### 表定义
+创建表
+```sql
+CREATE TABLE tbl_name(
+字段名 1 数据类型 [列级完整性约束条件][默认值]
+[,字段名 2 数据类型 [列级完整性约束条件][默认值]][......]
+[表级完整性约束条件]
+)[ENGINE=引擎类型]
+```
 
 连接数据库
 ```sql
 mysql -u root -p
 ```
-
-编辑114sdhshd
 
 显示所有数据库
 ```sql
