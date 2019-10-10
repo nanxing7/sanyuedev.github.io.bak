@@ -127,7 +127,7 @@ cdn:
 # ---------------
 avatar:
 
-top_img: https://raw.githubusercontent.com/sanyuedev/Picture_Bed_With_PicGO/master/20191009203011.png # false or url of img
+top_img: https://i.loli.net/2019/10/10/bQOZ1rvBz2hEsoY.jpg # false or url of img
 
 post_meta:
   date_type: created # created or updated
@@ -149,7 +149,7 @@ post_copyright:
 
 # Please see doc for more details: https://molunerfinn.com/hexo-theme-melody-doc/#/theme-config?id=auto-excerpt
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # slide
