@@ -45,9 +45,42 @@ ADD
 ```sql
 ALTER TABLE ADD tbl_name 字段名 1 数据类型 [列级完整性约束条件][默认值] {AFTER/BEFORE} 字段;
 ```
+CHANGE
+```sql
+ALTER TABLE tbl_name CHANGE 原字段 新字段 属性
+```
 ALTER
 ```sql
-ALTER TABLE tbl_name ALTER 
+ALTER TABLE tbl_name ALTER [COLUMN] 字段名 SET 
+```
+MODIFY
+```sql
+ALTER TABLE tbl_name MODIFY 字段 ...
+```
+DROP
+```sql
+ALTER TABLE tbl_name DROP 字段名
+```
+RENAME[TO]
+```sql
+ALTER TABLE tbl_name RENAME TO new_tbl_name
+```
+#### 重命名表
+```sql
+RENAME TABLE tbl_name TO new_tbl_name [,tbl2_name TO new_tbl_name]
+```
+#### 删除表
+```sql
+DROP TABLE [IF EXISTS] tbl_name
+```
+#### 查看表
+显示表的名称
+```sql
+SHOW TABLES;
+```
+显示表的结构
+```sql
+DESCRIBE tbl_name;
 ```
 连接数据库
 ```sql
