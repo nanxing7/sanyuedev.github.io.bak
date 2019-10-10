@@ -1,5 +1,5 @@
 #!/bin/sh
 d=date
 git add .
-git commit -m '$d'
+git commit -m '提交'
 git push
