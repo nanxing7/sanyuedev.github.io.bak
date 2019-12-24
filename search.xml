@@ -4,13 +4,38 @@
   
     
     <entry>
+      <title>CentOS sqlite3 版本过低</title>
+      <link href="/2019/12/24/CentOS-sqlite3-%E7%89%88%E6%9C%AC%E8%BF%87%E4%BD%8E/"/>
+      <url>/2019/12/24/CentOS-sqlite3-%E7%89%88%E6%9C%AC%E8%BF%87%E4%BD%8E/</url>
+      
+        <content type="html"><![CDATA[<p>参考链接</p><a id="more"></a><p><a href="https://blog.csdn.net/qq_39969226/article/details/92218635" target="_blank" rel="noopener">https://blog.csdn.net/qq_39969226/article/details/92218635</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CentOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CentOS 防火墙配置.md</title>
       <link href="/2019/12/24/CentOS-%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE/"/>
       <url>/2019/12/24/CentOS-%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>部署环境防火墙配置</p><a id="more"></a><p>开启端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --zone=public --add-port=8080-8081/tcp //永久</span><br><span class="line"></span><br><span class="line">firewall-cmd --zone=public --add-port=8080-8081/tcp //临时</span><br></pre></td></tr></table></figure><p>使用命令加载设置<code>firewall-cmd --reload</code></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> CentOS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -27,9 +52,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> CentOS </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
