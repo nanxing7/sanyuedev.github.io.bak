@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>写在2020年前</title>
+      <link href="/2019/12/31/%E5%86%99%E5%9C%A82020%E5%B9%B4%E5%89%8D/"/>
+      <url>/2019/12/31/%E5%86%99%E5%9C%A82020%E5%B9%B4%E5%89%8D/</url>
+      
+        <content type="html"><![CDATA[<p>回顾2019年，年初的时候预算严重超支，买了很多没用的东西，现在是非常的后悔，以后买东西前一定要多问自己几个为什么？拒绝冲动消费。</p><a id="more"></a><p>今年买了：<br>一台笔记本<br>一台台式电脑<br>一部iPad<br>一部iPhoneXR</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 感想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CentOS sqlite3 版本过低</title>
       <link href="/2019/12/24/CentOS-sqlite3-%E7%89%88%E6%9C%AC%E8%BF%87%E4%BD%8E/"/>
       <url>/2019/12/24/CentOS-sqlite3-%E7%89%88%E6%9C%AC%E8%BF%87%E4%BD%8E/</url>
@@ -27,7 +46,7 @@
       <link href="/2019/12/24/CentOS-%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE/"/>
       <url>/2019/12/24/CentOS-%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE/</url>
       
-        <content type="html"><![CDATA[<p>部署环境防火墙配置</p><a id="more"></a><p>开启端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --zone=public --add-port=8080-8081/tcp //永久</span><br><span class="line"></span><br><span class="line">firewall-cmd --zone=public --add-port=8080-8081/tcp //临时</span><br></pre></td></tr></table></figure><p>使用命令加载设置<code>firewall-cmd --reload</code></p>]]></content>
+        <content type="html"><![CDATA[<p>部署环境防火墙配置</p><a id="more"></a><p>[TOC]</p><p>开启端口</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --zone=public --add-port=8080-8081/tcp //永久</span><br><span class="line"></span><br><span class="line">firewall-cmd --zone=public --add-port=8080-8081/tcp //临时</span><br></pre></td></tr></table></figure><p>使用命令加载设置<code>firewall-cmd --reload</code></p>]]></content>
       
       
       
